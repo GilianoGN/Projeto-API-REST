@@ -1,15 +1,19 @@
-#spring:
+#spring:  #Banco de Dados PostgreSQL no Railway
 #    datasource:
 #        url: jdbc:${DATABASE_URL}
+#        driver-class-name: org.postgresql.Driver
 #        url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
 #        username: ${PGUSER}
 #        password: ${PGPASSWORD}
 #    jpa:
-#        open-in-view: false
-#        hibernate:
+#        properties:
+#            hibernate:
 #                ddl-auto: create # validate / update / create / create-drop
+#        generate-ddl: true
+#        show-sql: false
+#        open-in-view: false
 
-spring:
+spring:  #Banco de Dados PostgreSQL localmente
     datasource:
         url: jdbc:postgresql://localhost:5432/API-REST
         username: postgres
@@ -29,7 +33,7 @@ logging:
         org.hibernate.SQL: debug
         org.hibernate.tool.schema: debug
 
-#spring:
+#spring:  #Banco de Dados H2
 #    datasource:
 #        url: jdbc:h2:mem:sdw2025
 #        username: sdw2025
