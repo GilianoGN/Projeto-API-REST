@@ -1,32 +1,32 @@
-#spring:  #Banco de Dados PostgreSQL no Railway
-#    datasource:
-#        url: jdbc:${DATABASE_URL}
-#        driver-class-name: org.postgresql.Driver
-#        url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
-#        username: ${PGUSER}
-#        password: ${PGPASSWORD}
-#    jpa:
-#        properties:
-#            hibernate:
-#                ddl-auto: create # validate / update / create / create-drop
-#        generate-ddl: true
-#        show-sql: false
-#        open-in-view: false
-
-spring:  #Banco de Dados PostgreSQL localmente
+spring:  #Banco de Dados PostgreSQL no Railway
     datasource:
-        url: jdbc:postgresql://localhost:5432/API-REST
-        username: postgres
-        password: postgres        
+#        url: jdbc:${DATABASE_URL}
+        url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
+        username: ${PGUSER}
+        password: ${PGPASSWORD}
         driver-class-name: org.postgresql.Driver
     jpa:
         properties:
             hibernate:
-#                dialect: org.hibernate.dialect.PostgreSQLDialect
-                ddl-auto: create-drop # validate / update / create / create-drop
+                ddl-auto: create # validate / update / create / create-drop
         generate-ddl: true
-        show-sql: true
+        show-sql: false
         open-in-view: false
+
+#spring:  #Banco de Dados PostgreSQL localmente
+#    datasource:
+#        url: jdbc:postgresql://localhost:5432/API-REST
+#        username: postgres
+#        password: postgres        
+#        driver-class-name: org.postgresql.Driver
+#    jpa:
+#        properties:
+#            hibernate:
+##                dialect: org.hibernate.dialect.PostgreSQLDialect
+#                ddl-auto: create-drop # validate / update / create / create-drop
+#        generate-ddl: true
+#        show-sql: true
+#        open-in-view: false
 
 logging:
     level:
