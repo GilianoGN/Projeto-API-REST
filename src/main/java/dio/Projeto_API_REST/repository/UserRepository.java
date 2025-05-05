@@ -9,4 +9,6 @@ import dio.Projeto_API_REST.model.User;
 public interface UserRepository extends JpaRepository<User, Long>{
     
     boolean existsByAccountNumber(String accountNumber);
+
+    boolean existsByCardNumber(String cardNumber);
 }

@@ -16,10 +16,10 @@ public class News {
 
     private String description;
 
-    public Long getnews_Id() {
+    public Long getNews_Id() {
         return news_id;
     }
-    public void setnews_Id(Long news_id) {
+    public void setNews_Id(Long news_id) {
         this.news_id = news_id;
     }
 

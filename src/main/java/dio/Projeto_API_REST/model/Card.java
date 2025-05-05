@@ -22,10 +22,10 @@ public class Card {
     @Column(name = "avail_limit", precision = 13, scale = 2)
     private BigDecimal limit;
 
-    public Long getcard_Id() {
+    public Long getCard_Id() {
         return card_id;
     }
-    public void setcard_Id(Long card_id) {
+    public void setCard_Id(Long card_id) {
         this.card_id = card_id;
     }
 

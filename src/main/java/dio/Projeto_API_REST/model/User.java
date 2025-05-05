@@ -34,10 +34,10 @@ public class User {
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<News> news;
 
-    public Long getuser_Id() {
+    public Long getUser_Id() {
         return user_id;
     }
-    public void setuser_Id(Long user_id) {
+    public void setUser_Id(Long user_id) {
         this.user_id = user_id;
     }
 

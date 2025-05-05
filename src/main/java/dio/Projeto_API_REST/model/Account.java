@@ -27,10 +27,10 @@ public class Account {
     @Column(name = "add_limit", precision = 13, scale = 2)
     private BigDecimal limit;
 
-    public Long getaccount_Id() {
+    public Long getAccount_Id() {
         return account_id;
     }
-    public void setaccount_Id(Long account_id) {
+    public void setAccount_Id(Long account_id) {
         this.account_id = account_id;
     }
 

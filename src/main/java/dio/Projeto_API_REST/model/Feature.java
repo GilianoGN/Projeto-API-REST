@@ -16,10 +16,10 @@ public class Feature {
 
     private String description;
 
-    public Long getfeature_Id() {
+    public Long getFeature_Id() {
         return feature_id;
     }
-    public void setfeature_Id(Long feature_id) {
+    public void setFeature_Id(Long feature_id) {
         this.feature_id = feature_id;
     }
 
