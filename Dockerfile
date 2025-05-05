@@ -1,6 +1,7 @@
 # Usa uma imagem base com Maven e JDK 21 para build
-FROM maven:3.9.6-jdk-21 AS builder
+FROM eclipse-temurin:21-jdk-alpine AS builder
 WORKDIR /app
+RUN apk add --no-cache maven
 COPY pom.xml .
 COPY src ./src
 RUN mvn clean package -DskipTests
