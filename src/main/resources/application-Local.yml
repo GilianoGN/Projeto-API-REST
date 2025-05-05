@@ -1,4 +1,4 @@
-spring:  #Banco de Dados PostgreSQL no Railway
+spring:  #Banco de Dados PostgreSQL localmente
     datasource:
         url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
         username: ${PGUSER}
@@ -7,9 +7,9 @@ spring:  #Banco de Dados PostgreSQL no Railway
     jpa:
         properties:
             hibernate:
-                ddl-auto: update # validate / update / create / create-drop
+                ddl-auto: create-drop # validate / update / create / create-drop
         generate-ddl: true
-        show-sql: false
+        show-sql: true
         open-in-view: false
 logging:
     level:
